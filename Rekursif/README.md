@@ -90,6 +90,24 @@ _Jawaban:_
 
 1.  - Base case -> if (tahun == 0) return saldo;
     - Recursion call -> hitungLaba(saldo, tahun - 1)
+2.  - Fase Ekspansi (Expansion Phase) : Fase ekspansi adalah fase pemanggilan fungsi secara berulang sampai mencapai base case.
+    -> Fase Ekspansi
+    hitungLaba(100000, 3)
+        = 1.11 * hitungLaba(100000, 2)
+
+        = 1.11 * (1.11 * hitungLaba(100000, 1))
+
+        = 1.11 * (1.11 * (1.11 * hitungLaba(100000, 0)))
+
+        = 1.11 * 1.11 * 1.11 * hitungLaba(100000, 0)
+
+    - Fase Substitusi (Substitution Phase) : Fase substisui adalah fase pengembalian nilai dari base case ke pemanggilan sebelumnya. 
+    -> Fase Substitusi
+    = 1.11 * 1.11 * 1.11 * 100000
+    = 1.367631 * 100000
+    = 136763.1
+    
+
 
 
 
