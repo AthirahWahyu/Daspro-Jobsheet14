@@ -75,6 +75,21 @@ _Jawaban:_
 
     ![P2J2](./P2J2.png)
 
+## - Percobaan 3
+
+## - Percobaan 3 : Verifikasi Hasil Percobaan 
+
+![Verifikasi3](./Verifikasi3.png)
+
+_Pertanyaan:_
+
+1.  Pada Percobaan3, sebutkan blok kode program manakah yang merupakan "base case" dan "recursion call"!
+2.  Jabarkan trace fase ekspansi dan fase subtitusi algoritma perhitungan laba di atas jika diberikan nilai hitungLaba(100000, 3)
+
+_Jawaban:_
+
+1.  - Base case -> if (tahun == 0) return saldo;
+    - Recursion call -> hitungLaba(saldo, tahun - 1)
 
 
 
