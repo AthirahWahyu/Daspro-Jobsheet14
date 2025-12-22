@@ -20,4 +20,5 @@ _Jawaban:_
         a. Memanggil dirinya sendiri 
         b. Memiliki kondisi berhenti (base case) agar tidak berjalan tanpa henti
         c. Setiap pemanggilan membawa masalah yang lebih kecil
+2.  Hasil kedua fungsi tidak sama. Fungsi rekursif berhasil menghitung faktorial dengan pemanggilan berulang. Fungsi iteratif gagal menghitung karena kesalahan kodisi perulangan. Perbedaan utama terletak pada alur eksekusi : rekursif meggunakan pemanggilan diri sendiri, sedangkan iteratif menggunakan loop.
 
