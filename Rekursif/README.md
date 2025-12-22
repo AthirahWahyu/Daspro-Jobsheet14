@@ -22,3 +22,18 @@ _Jawaban:_
         c. Setiap pemanggilan membawa masalah yang lebih kecil
 2.  Hasil kedua fungsi tidak sama. Fungsi rekursif berhasil menghitung faktorial dengan pemanggilan berulang. Fungsi iteratif gagal menghitung karena kesalahan kodisi perulangan. Perbedaan utama terletak pada alur eksekusi : rekursif meggunakan pemanggilan diri sendiri, sedangkan iteratif menggunakan loop.
 
+## - Percobaan 2 
+
+## - Percobaan 2 : Verifikasi Hasil Percobaan 
+
+![Verifikasi2](./Verifikasi2.png)
+
+_Pertanyaan:_
+
+1.  Pada Percobaan2, terdapat pemanggilan fungsi rekursif hitungPangkat(bilangan, pangkat) pada fungsi main, kemudian dilakukan pemanggilan fungsi hitungPangkat() secara berulangkali. Jelaskan sampai kapan proses pemanggilan fungsi tersebut akan dijalankan!
+2.  Tambahkan kode program untuk mencetak deret perhitungan pangkatnya. Contoh: hitungPangkat(2,5) dicetak 2x2x2x2x2x1 = 32
+
+_Jawaban:_ 
+
+1.  Proses pemanggilan fungsi rekursif hitungPangkat() akan terus berjalan sampai nilai pangkat (y) bernilai 0. Kondisi y == 0 berfungsi sebagai kondisi berhenti (base case) yang mencegah rekursi berjalan tanpa batas.
+
