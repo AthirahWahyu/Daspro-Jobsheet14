@@ -17,7 +17,7 @@ public class TotalNilai4 {
     // Fungsi Iteratif 
     static int totalIteratif(Scanner sc, int n){
         int total = 0;
-        for (int i = 0; i >= 1 ; i--) {
+        for (int i = n; i >= 1 ; i--) {
             System.out.print("Masukkan angka ke-" + i + ": ");
             total += sc.nextInt();
         }
@@ -31,7 +31,7 @@ public class TotalNilai4 {
         System.out.print("Masukkan jumlah angka yang ingin dihitung (N): ");
         N = sc.nextInt();
 
-        int total = totalRekursif(sc, N);
+        int total = totalIteratif(sc, N);
 
         System.out.println("Total dari " + N + " angka yang dimasukkan adalah: " + total);
     }

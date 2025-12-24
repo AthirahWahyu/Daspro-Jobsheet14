@@ -109,7 +109,7 @@ _Jawaban:_
 
 # TUGAS
 
-1.  Code : 
+1.  Code proses Rekursif : 
     ```java 
         package Rekursif;
 
@@ -130,7 +130,7 @@ _Jawaban:_
             // Fungsi Iteratif 
             static int totalIteratif(Scanner sc, int n){
                 int total = 0;
-                for (int i = 0; i >= 1 ; i--) {
+                for (int i = n; i >= 1 ; i--) {
                     System.out.print("Masukkan angka ke-" + i + ": ");
                     total += sc.nextInt();
                 }
@@ -144,7 +144,7 @@ _Jawaban:_
                 System.out.print("Masukkan jumlah angka yang ingin dihitung (N): ");
                 N = sc.nextInt();
 
-                int total = totalRekursif(sc, N);
+                int total = totalIteratif(sc, N);
 
                 System.out.println("Total dari " + N + " angka yang dimasukkan adalah: " + total);
             }
@@ -154,6 +154,56 @@ _Jawaban:_
     Output : 
 
     ![T1J1](./T1J1.png)
+
+    Code proses Iteratif :
+    ```java 
+        package Rekursif;
+
+        import java.util.Scanner;
+
+        public class TotalNilai4 {
+            // Fungsi Rekursif
+            static int totalRekursif(Scanner sc, int n) {
+                if (n == 0) {
+                    return 0; // base case
+                } else {
+                    System.out.print("Masukkan angka ke-" + n + ": ");
+                    int angka = sc.nextInt();
+                    return angka + totalRekursif(sc, n - 1);
+                }
+            }
+
+            // Fungsi Iteratif 
+            static int totalIteratif(Scanner sc, int n){
+                int total = 0;
+                for (int i = n; i >= 1 ; i--) {
+                    System.out.print("Masukkan angka ke-" + i + ": ");
+                    total += sc.nextInt();
+                }
+                return total;
+            }
+
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+
+                int N;
+                System.out.print("Masukkan jumlah angka yang ingin dihitung (N): ");
+                N = sc.nextInt();
+
+                int total = totalIteratif(sc, N);
+
+                System.out.println("Total dari " + N + " angka yang dimasukkan adalah: " + total);
+            }
+        }
+    ```
+
+    Output : 
+
+    ![T1J2](./T1J2.png)
+        
+
+
+
 
 
 
